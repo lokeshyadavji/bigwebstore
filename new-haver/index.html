@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="navbar">
+                    <div class="logo d-flex align-items-center">
+                        <a href="#">
+                            <h2 class="m-0 p-0">havenly</h2>
+                        </a>
+
+                        <div class="manu-bar">
+                            <ul class="d-flex m-0">
+                                <li>
+                                    <a href="#">How It Works</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Boards</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Designers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shop-icons">
+                        <div class="main-icon position-relative d-flex align-items-center">
+                            <div class="my-acount">
+                                <a href="#"><span>E</span></a>
+
+                                <div class="my-acount-datile">
+                                    <ul class="p-0">
+                                        <li>
+                                            <a href="#">My Favorites</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Orders</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Credits</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Account Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Refer & Earn</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Style Quiz</a>
+                                        </li>
+                                        <li class="logout">
+                                            <a href="#">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="massage ms-4">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                        fill="#000">
+                                        <path
+                                            d="M5.76282 17H20V5H4V18.3851L5.76282 17ZM6.45455 19L2 22.5V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V18C22 18.5523 21.5523 19 21 19H6.45455Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="shop ms-4">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                        fill="#000">
+                                        <path
+                                            d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="menu-open-icon ms-4" id="menu-toggle">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                    fill="currentColor">
+                                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                                </svg> -->
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile-header -->
+        <div class="mobile-header" id="menu">
+            <ul class="p-0 m-0">
+                <li class="dropdown-header menu-item" onclick="toggleMenu('submenu1')">
+                    <a href="#">How It Works</a>
+                    <span class="plus-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                            height="20" fill="#e8ab3a">
+                            <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+                        </svg></span>
+                    <div class="dropdown dropdown-content">
+                        <ul class="p-0 m-0"  id="submenu1" style="display: none;">
+                            <li>
+                                <a href="#">The Details</a>
+                            </li>
+                            <li>
+                                <a href="#">Designers</a>
+                            </li>
+                            <li>
+                                <a href="#">Style Quiz</a>
+                            </li>
+                            <li>
+                                <a href="#">Reviews</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">My Projects</a>
+                </li>
+                <li>
+                    <a href="#">My Boards</a>
+                </li>
+                <li>
+                    <a href="#">My Designers</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li class="dropdown-header menu-item" onclick="toggleMenu('submenu2')">
+                    <a href="#">Portfolio</a>
+                    <span class="plus-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                        height="20" fill="#e8ab3a">
+                        <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+                    </svg></span>
+                <div class="dropdown dropdown-content">
+                    <ul class="p-0 m-0"  id="submenu2" style="display: none;">
+                        <li>
+                            <a href="#">The Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Designers</a>
+                        </li>
+                        <li>
+                            <a href="#">Style Quiz</a>
+                        </li>
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Account</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+<!-- -home-main-section -->
+    <section class="position-relative" style="overflow: hidden;">
+        <div class="home-slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="banner-img" style="background-image: url(img/banner.webp);">
+                        
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="banner-img" style="background-image: url(img/banner-1.webp);">
+                        
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="banner-img" style="background-image: url(img/banner-2.webp);">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" position-relative">
+                <div class="slider-box">
+                    <div class="one-img" style="background-image: url(img/label.svg);">
+                        <!-- <h4>#1</h4> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="44" viewBox="0 0 39 44" fill="none"><path d="M22.291 43.179H39v-2.173l-2.725-.24c-2.602-.241-3.27-1.629-3.27-4.404V0h-1.697c-1.633 2.712-4.48 4.764-8.598 6.088l.302 1.99c1.452-.362 3.207-.843 4.055-.843 1.092 0 1.394.602 1.394 2.35v26.772c0 2.774-.848 4.162-3.63 4.403l-2.545.24v2.173l.005.006ZM7.298 21.696h7.505l-1.369 9.673H5.929l1.369-9.673Zm4.463 21.483h.862l1.524-10.972h5.325v-.832h-5.17l1.37-9.674h5.22v-.831H15.77l1.42-9.727h-.862l-1.369 9.727H7.401l1.42-9.727H7.96L6.59 20.87H1.42v.831h5.021l-1.369 9.674H0v.832h4.969L3.399 43.18h.862l1.524-10.972h7.557l-1.57 10.972h-.011Z" fill="#362B24"></path></svg>
+                       <div class="one-img-text">
+                        <h6>Interior Design Service</h6>
+                       </div>
+                    </div> 
+                    <div class="slider-box-text">
+                        <h1>Stunning interior design services, now within reach.</h1>
+                    </div>
+                    <div class="main-button">
+                     <a href="#">
+                        Find Your Style
+                     </a>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Havenly-works -->
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="Havenly-works-text text-center" style="text-transform: uppercase;">
+                    <h4 class="mb-5">how Havenly works</h4>
+                </div>
+                <div class="col-lg-7 mt-3">
+                    <div class="row">
+                     <div class="col-lg-2">
+                        <div class="havenly-main-text">
+                            <div class="havenly-text">
+                                <div>01</div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-10">
+                        <div class="havenly-title">
+                            <h4>Match with one of our talented designers and get inspired.</h4>
+                            <p>With 10 years of experience in all 50 states and 100,000+ designs, we’ll help you hone your style, get inspired, and realize your design dreams for your specific space.</p>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-3">
+                   <div class="row">
+                    <div class="col-6">
+                        <div class="main-havenly-img">
+                        <img src="img/hiw_match_01 (1).webp" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="havenly-img-small mb-2">
+                            <img src="img/hiw_match_02.webp" alt="" width="100%">
+                        </div>
+                        <div class="havenly-img-small">
+                            <img src="img/hiw_match_03.webp" alt="" width="100%">
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-lg-7 mt-3">
+                    <div class="row">
+                     <div class="col-lg-2">
+                        <div class="havenly-main-text">
+                            <div class="havenly-text">
+                                <div>02</div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-10">
+                        <div class="havenly-title">
+                            <h4>Match with one of our talented designers and get inspired.</h4>
+                            <p>With 10 years of experience in all 50 states and 100,000+ designs, we’ll help you hone your style, get inspired, and realize your design dreams for your specific space.</p>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-3">
+                         <div class="main-havenly-img">
+                         <img src="img/hiw_colaborate.webp" alt="" width="100%" style="border-radius: 10px;">
+                    </div>
+                 </div>
+
+                 <div class="col-lg-7 mt-3">
+                    <div class="row">
+                     <div class="col-lg-2">
+                        <div class="havenly-main-text">
+                            <div class="havenly-text">
+                                <div>03</div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-10">
+                        <div class="havenly-title">
+                            <h4>Match with one of our talented designers and get inspired.</h4>
+                            <p>With 10 years of experience in all 50 states and 100,000+ designs, we’ll help you hone your style, get inspired, and realize your design dreams for your specific space.</p>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-3">
+                    <div class="row">
+                     <div class="col-6">
+                         <div class="main-havenly-img">
+                         <img src="img/hiw_bring_01.webp" alt="" width="100%">
+                         </div>
+                     </div>
+                     <div class="col-6">
+                         <div class="havenly-img-small mb-2">
+                             <img src="img/hiw_bring_02.webp" alt="" width="100%">
+                         </div>
+                     </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Our interior-section  -->
+
+
+    <section class="our-interior-section position-relative">
+        <div class="container">
+            <div class="col-lg-10">
+            <div class="our-interior-left-box">
+                <div class="our-interior-text">
+                    <h2>Our interior design services are tailored to your space, style, and budget.</h2>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="design-online-box position-relative">
+                                <div class="off"></div>
+                                <div class="Percent">
+                                    <span class="Percent-off">50%</span>
+                                    <span class="off-percent">off</span>
+                                </div>
+                                <div class="design-online-text">
+                                    <h3 class="PackageCard_Title__kwDkh">Design Online</h3>
+                                    <p>Your designer will work with you 1:1 to bring your vision to life, complete with a 3D rendering of your actual space.</p>
+                                </div>
+                                <div class="main-small-box-text">
+                                    <div class="small-text">
+                                        <h6 class="mb-3">Starting at</h6>
+                                    </div>
+                                    <div class="PackageCard mb-5">
+                                        <span class="position-relative regular">$199</span>
+                                        <span class="PackageCard_SalePric ms-3">$99.50</span>
+                                        <div class="PackageCard_PriceBottom" style="font-size: 13px;">plus <!-- -->$99.50<!-- --> for each additional room</div>
+                                    </div>
+                                    <div class="main-button mb-4">
+                                        <a href="#">
+                                            Get started online
+                                        </a>
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="design-online-box position-relative">
+                                <div class="off">
+                                </div>
+                                <div class="Percent">
+                                <span class="Percent-off">50%</span>
+                                <span class="off-percent">off</span>
+                            </div>
+                                <div class="design-online-text">
+                                    <h3 class="PackageCard_Title__kwDkh">Design Online</h3>
+                                    <p>Your designer will work with you 1:1 to bring your vision to life, complete with a 3D rendering of your actual space.</p>
+                                </div>
+                                <div class="main-small-box-text">
+                                    <div class="small-text">
+                                        <h6 class="mb-3">Starting at</h6>
+                                    </div>
+                                    <div class="PackageCard mb-5">
+                                        <span class="position-relative regular">$199</span>
+                                        <span class="PackageCard_SalePric ms-3">$99.50</span>
+                                        <div class="PackageCard_PriceBottom" style="font-size: 13px;">plus <!-- -->$99.50<!-- --> for each additional room</div>
+                                    </div>
+                                    <div class="main-button mb-4">
+                                        <a href="#">
+                                            Get started online
+                                        </a>
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="right-box-img">
+                        <img src="img/package-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Get-inspired -->
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="Get-text text-center">
+                    <h4 class="mb-4">Get inspired</h4>
+                    <div class="our-interior-left-box mb-4">
+                        <div class="our-interior-text">
+                            <h2 style="font-size: 40px;">Explore real client before & afters.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="main-tabs-room mt-5">
+                        <ul class="nav nav-pills mb-3 d-flex align-items-center justify-content-center" id="pills-tab" role="tablist" style="flex-wrap: wrap; gap: 10px;">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <img src="img/living.svg" alt="" class="me-2">Living Room</button>
+                            </li>
+                            <li class="nav-item" role="poresentation">
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                <img src="img/dining.svg" alt="" class="me-2">Dining Room</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <img src="img/bedroom.svg" alt="" class="me-2">Bedroom</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-app-tab" data-bs-toggle="pill" data-bs-target="#pills-app" type="button" role="tab" aria-controls="pills-app" aria-selected="false">
+                                <img src="img/more.svg" alt="" class="me-2">Explore More</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="sumenu-tabs">
+                                    <ul class="nav nav-pills  d-flex align-items-center justify-content-center mb-3" id="pills-tab" role="tablist" style="flex-wrap: wrap; gap: 30px;">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-iving-Room-tab" data-bs-toggle="pill" data-bs-target="#pills-iving-Room" type="button" role="tab" aria-controls="pills-iving-Room" aria-selected="true">Autumn’s Living Room
+                                        </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-badroom-tab" data-bs-toggle="pill" data-bs-target="#pills-badroom" type="button" role="tab" aria-controls="pills-badroom" aria-selected="false">Jenna’s Living Room
+                                        </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-sroom-tab" data-bs-toggle="pill" data-bs-target="#pills-sroom" type="button" role="tab" aria-controls="pills-sroom" aria-selected="false">Veronica’s Living Room</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-mroom-tab" data-bs-toggle="pill" data-bs-target="#pills-mroom" type="button" role="tab" aria-controls="pills-mroom" aria-selected="true">Autumn’s Living Room
+                                        </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-croom-tab" data-bs-toggle="pill" data-bs-target="#pills-croom" type="button" role="tab" aria-controls="pills-croom" aria-selected="false">Jenna’s Living Room
+                                        </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-droom-tab" data-bs-toggle="pill" data-bs-target="#pills-droom" type="button" role="tab" aria-controls="pills-droom" aria-selected="false">Veronica’s Living Room</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="pills-tabContent-2">
+                                        <div class="tab-pane fade show active" id="pills-iving-Room" role="tabpanel" aria-labelledby="pills-iving-Room-tab">
+                                            <div class="">
+                                                <div class="container-2">
+                                                    <img src="img/banner-1.webp" alt="Before" class="before-img">
+                                                    <img src="img/banner-2.webp" alt="After" class="after-img">
+                                                    <div class="slider"></div>
+                                                    <div class="label left">Before</div>
+                                                    <div class="label right">After</div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-badroom" role="tabpanel" aria-labelledby="pills-badroom-tab">...</div>
+                                        <div class="tab-pane fade" id="pills-sroom" role="tabpanel" aria-labelledby="pills-sroom-tab">...</div>
+                                        <div class="tab-pane fade show active" id="pills-mroom" role="tabpanel" aria-labelledby="pills-mroom-tab">...</div>
+                                        <div class="tab-pane fade" id="pills-croom" role="tabpanel" aria-labelledby="pills-croom-tab">...</div>
+                                        <div class="tab-pane fade" id="pills-droom" role="tabpanel" aria-labelledby="pills-droom-tab">...</div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                            <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">...</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+    <div class="container">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Design Careers</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press Inquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">Style Quiz</a></li>
+          <li><a href="#">Financing</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Refer & Earn</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Promotions</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>In-Person Locations</h4>
+        <ul>
+          <li><a href="#">Austin</a></li>
+          <li><a href="#">Boston</a></li>
+          <li><a href="#">Charlotte</a></li>
+          <li><a href="#">Chicago</a></li>
+          <li><a href="#">Dallas</a></li>
+          <li><a href="#">Denver</a></li>
+          <li><a href="#">View All Locations</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Our Brands</h4>
+        <ul>
+          <li><a href="#">Interior Define</a></li>
+          <li><a href="#">The Citizenry</a></li>
+          <li><a href="#">The Inside</a></li>
+          <li><a href="#">St. Frank</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: <a href="mailto:hello@havenly.com">hello@havenly.com</a></li>
+        </ul>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Havenly Inc., All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
+  </footer>
+    
+  <!-- Swiper JS -->
+  <script src="js/js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+  <script>
+     var swiper = new Swiper(".mySwiper", {
+        loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+    //   keyboard: {
+    //     enabled: true,
+    //   },
+    speed: 1000, 
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false, 
+    },
+    });
+
+  </script>
+</body>
+
+</html>
